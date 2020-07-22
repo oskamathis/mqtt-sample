@@ -5,14 +5,14 @@ const client = mqtt.connect({
     clientId: 'mqtt.subscriber',
 });
 
-client.on('connect', function(){
+client.on('connect', function () {
     console.log('subscriber.connected.');
 });
 
-client.subscribe('topic0', function(err, granted){
+client.subscribe('topic0', function (err, granted) {
     console.log('subscriber.subscribed.');
 });
 
-client.on('message', function(topic, message){
+client.on('message', function (topic, message) {
     console.log('subscriber.on.message', 'topic:', topic, 'message:', message.toString());
 });
