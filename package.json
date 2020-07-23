@@ -1,0 +1,9 @@
+{
+  "name": "mqtt-sample",
+  "description": "MQTTプロトコルを用いた双方向通信の動作イメージ確認用スクリプト群",
+  "dependencies": {
+    "mosca": "2.8.3",
+    "node-uuid": "1.4.8",
+    "readline-sync": "^1.4.10"
+  }
+}
